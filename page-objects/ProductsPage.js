@@ -1,5 +1,5 @@
 import { expect  } from "@playwright/test";
-import { Navigation } from "./navigation";
+import { Navigation } from "./Navigation.js";
 import { isDesktopViewport} from "../utils/isDesktopViewPort.js";
 
 
