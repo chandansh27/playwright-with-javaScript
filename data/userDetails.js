@@ -1,5 +1,5 @@
 export const adminDetails = {
-    username: "admin@gmail.com",
+    username: "ADMIN_USERNAME",
     password: process.env.ADMIN_PASSWORD,
 
 }
