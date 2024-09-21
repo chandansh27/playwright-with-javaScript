@@ -1,6 +1,6 @@
 import { isDesktopViewport} from "../utils/isDesktopViewPort.js";
 
-export class Navigation_nav {
+export class Navigation {
     constructor(page){
         this.page = page
 
