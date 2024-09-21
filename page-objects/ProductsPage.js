@@ -1,5 +1,5 @@
 import { expect  } from "@playwright/test";
-import { Navigation } from "./navigation";
+import { Navigation_nav } from "./navigation";
 import { isDesktopViewport} from "../utils/isDesktopViewPort.js";
 
 
@@ -21,7 +21,7 @@ export class ProductsPage {
         await specificAddButton.waitFor();
         await expect (specificAddButton).toHaveText("Add to Basket");
 
-        const navigation = new Navigation(this.page);
+        const navigation = new Navigation_nav(this.page);
         //only desktop viewport
         let basketCountBeforeAdding;
         if(isDesktopViewport(this.page)){

@@ -1,7 +1,7 @@
 import { test } from '@playwright/test';
 import {v4 as uuidv4} from 'uuid';
 import { ProductsPage } from '../page-objects/ProductsPage';
-import { Navigation } from '../page-objects/navigation';
+import { Navigation_nav } from '../page-objects/Navigation_nav.js';
 import { Checkout } from '../page-objects/Checkout.js';
 import { LoginPage } from '../page-objects/LoginPage.js';
 import { RegisterPage } from '../page-objects/RegisterPage.js';
@@ -18,8 +18,8 @@ test('New user full end-to-end test journey', async({page}) => {
     await productsPage.addProductToBasket(0);
     await productsPage.addProductToBasket(1);
     await productsPage.addProductToBasket(2);
-    const navigation = new Navigation(page);
-    await navigation.gotoCheckout();
+    const navigation_nav = new Navigation_nav(page);
+    await navigation_nav.gotoCheckout();
 
     const checkout =  new Checkout(page);
     await checkout.removeCheapestProduct();
