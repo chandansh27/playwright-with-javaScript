@@ -21,3 +21,4 @@ jobs:
           npm ci
           echo "Run Playwright tests"
           npm run test:ci
+          
