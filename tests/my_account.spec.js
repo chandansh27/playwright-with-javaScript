@@ -13,7 +13,6 @@ test('My Account using cookie injection and mocking network request', async({ pa
         body: JSON.stringify({ message: "Playwright Error From Mocking" }),
     })
     
-
    })
 
    const myAccount = new MyAccountPage(page);
